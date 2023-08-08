@@ -1,0 +1,1067 @@
+
+body
+{
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar start */
+nav 
+{
+    position: fixed; 
+    top: 0;
+    z-index: 1111;
+    width: 100%;
+    height: 80px;
+    background: black;
+}
+label.logo 
+{
+    font-size: 35px;
+    color: aliceblue;
+    margin: 0 100px;
+    line-height: 80px;
+}
+label.logo img{
+    height: 80px;
+}
+nav ul 
+{
+    float: right;
+    list-style-type: none;
+}
+nav ul li 
+{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a 
+{
+    text-decoration: none;
+    color:  #FF6D22;
+    font-size: 20px;
+    padding: 8px 20px;
+    margin-right: 55px;
+}
+#checkbtn 
+{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+#check 
+{
+    display: none;
+}
+#check:checked ~ ul 
+{
+    left: 0;
+}
+@media (max-width: 666px) 
+{
+    label.logo 
+    {
+        font-size: 26px;
+        margin: 0px 50px;
+    }
+}
+@media (max-width: 666px) 
+{
+    label.logo 
+    {
+        margin: 0px 70px;
+    }
+    #checkbtn 
+    {
+        display: block;
+    }
+   
+    nav ul 
+    {
+        width: 100%;
+        height: 100vh;
+        background: red;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: .5s;
+    }
+    @media (max-width: 666px) 
+    {
+        nav 
+        {
+            position: fixed; 
+            top: 0;
+            z-index: 11111;
+           margin-right: 20px;
+            height: 80px;
+            background: rgb(143, 61, 26);
+        }
+        nav ul 
+        {
+            width: 60%;
+            height: 40vh;
+            background: #0a021c;
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            transition: .7s;
+        }
+        }
+    nav ul li 
+    {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        margin: 10px;
+    }
+
+}
+
+/* Navbar Ends */
+
+/* INTRODUCTION WITH IMAGE */
+.maindiv 
+    {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 700px;
+    
+    }
+    
+    .imgg img
+    {
+    margin-top: 110px;
+    height: 399px;
+    width: 250px;
+    
+    }
+    
+    @media (max-width: 666px) {
+    .imgg img  {
+        margin-top: 95px;
+        width: 200px;
+    }
+    .name a
+    {
+    display: block;  
+    }
+    .maindiv nav
+    {
+        width:400px;
+    }
+}
+    @media (max-width: 666px) 
+    {
+        .name
+        {
+            margin-top: 45px;
+            margin-left: 9px;
+            font-size: 14px;
+        }
+        }
+/* INTRODUCTION WITH IMAGE Ends */
+
+/* DISPLAYING CLIENTS */
+.h 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    
+}
+.bh
+{
+    background-image: url('6.jpeg');
+}
+@media (max-width: 666px) {
+    .h h2
+    {
+        font-size: 20px;
+        color: #770a96;
+    }
+    }
+.h::before,
+.h::after 
+{
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: red;
+}
+.h::before 
+{
+    margin-left: 450px;
+    margin-right: 10px;
+}
+.h::after 
+{
+    margin-right: 450px;
+    margin-left: 10px;
+}
+.h 
+{
+    color: red;
+}
+.co 
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 59px;
+    margin-top: 20px;
+}
+.co div a 
+{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 666px) 
+{
+    .bh 
+    {
+        background-size: cover;
+        background-position: center;
+    }
+    .co 
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .co div 
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* END OF DISPLAYING CLIENTS */
+
+/* STRENGTH SECTION */
+.csb 
+{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.csb a 
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+.vertical-lines 
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.vertical-lines::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    background-color: wheat;
+    height: 130px;
+    transition: background-color 0.3s ease;
+    transform: translateX(-50%);
+}
+.vertical-lines:hover::before 
+{
+    background-color: blue;
+}
+/* STRENGTH SECTION  Ends*/
+
+
+/* SKILL SECTION */
+.saat 
+{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+}
+.stirr 
+{
+    display: flex;
+    align-items: center;
+    }
+    .sbf,
+    .sba 
+    {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #1AC3A7; 
+    }
+    .sbf 
+    {
+        margin-left: 34px;
+    }
+    .sba 
+    {
+    margin-left: 10px;
+    margin-right: 390px;
+    }
+    @media (max-width: 666px) 
+    {
+        .frot
+        {
+        width: 300px;
+        }
+        .column
+        {
+        margin-left: -20px;
+        }
+    }
+.tam 
+{
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+@media (max-width: 767px) 
+{
+    .tam
+    {
+        padding: 3px;
+    }
+}
+.frot
+{
+    margin-top: 90px;
+    margin-bottom: 95px;
+}
+
+@media screen and (max-width: 666px) 
+{
+    .saat
+    {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    
+    }
+}
+.frot 
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+/* SKILL SECTION END */
+
+/* ABOUT PROJECTS  */
+.bgg 
+{
+    display: flex;
+    justify-content: center;
+    background-image: url('14.jpeg');
+}
+.rsp 
+{
+    margin-top: 10px;
+}
+.info 
+{
+    display: flex;
+}
+.number 
+{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.large-number 
+{
+    font-size: 46px;
+    color: rgb(169, 245, 4);
+    
+}
+
+.description 
+{
+    font-size: 34px;
+    color: rgb(169, 245, 4);
+    
+}
+
+@media screen and (max-width: 666px) 
+{
+    .rsp 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info 
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .number 
+    {
+        margin-bottom: 20px;
+    }
+}
+/* ABOUT PROJECTS END  */
+
+/*  ABOUT ME */
+    .line 
+    {
+    display: flex;
+    align-items: center;
+    }
+
+    
+    .line-before,
+    .line-after 
+    {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #1AC3A7;
+    }
+    .line-before 
+    {
+    margin-left: 320px;
+    margin-right: 5px;
+    }
+    .line-after 
+    {
+    margin-left: 10px;
+    margin-right: 390px;
+    }
+    
+    p 
+    {
+    margin: 0;
+    }
+    .do ul
+    {
+    text-decoration: none;
+    list-style-type: none;
+    }
+    .do a
+    {
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    }
+    .container 
+    {
+    margin-top: -8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    }
+   
+.image 
+{
+    margin-right: 20px;
+}
+.heo p
+{
+    margin-left: 150px;
+}
+@media (max-width: 666px) 
+    {
+    .heo p
+    {
+        font-size: 27px;
+        margin-left: 220px;
+    }
+    }
+.do p
+{
+    margin-left: 250px;
+}
+@media (max-width: 666px) 
+{
+    .do p
+    {
+        margin-left: 230px;
+        font-size: 12px;
+    }
+}
+.do a 
+{
+    margin-left: 210px;
+}
+.content 
+{
+    flex: 1;
+}
+.container
+{
+    background-image: url('Drd.jpg');
+    background-size: 100%;
+}
+.hi dialog
+{
+    margin-left: 200px;
+    margin-top: 400px;
+    color: #97169c;
+    font-size: 32px;
+    padding-right: 65px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.image img
+{
+    margin-left: 134px;
+}
+.content 
+{
+    flex: 1;
+}
+@media (max-width: 666px) 
+{
+    .container 
+    {
+    flex-direction: column;
+    }
+    .hi 
+    {
+    margin-bottom: 20px;
+    }
+}
+    @media (max-width: 666px) 
+    {
+        .do ul li
+        {
+        margin-bottom: 30px;
+        }
+    }
+.do li
+{
+    margin-top: 40px;
+    padding-left: 104px;
+}
+@media (max-width: 666px) {
+    .image
+    {
+        width: 620px;
+        
+    }
+}
+/*  ABOUT ME Ends */
+
+/* REVIEW RATING SECTION */
+.aboutme{
+    margin-right: 300px;
+}
+.about-me p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.uo
+{
+    margin-top: 110px;
+    /* margin-left: 194px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+}
+.uo > div
+{
+    flex: 1;
+    max-width: 100%;
+}
+.uo img
+{
+    margin-left: 145px;
+}
+@media (max-width: 666px) 
+{
+    .aboutme h3{
+        margin-left: 100px;
+    }
+    .aboutme h4{
+        margin-left: 100px;
+    }
+    .aboutme p{
+        margin-left: 100px;
+        display: ruby-text;
+    }
+    
+   
+}
+/* REVIEW RATING SECTION Ends */
+
+/* CARDS SECTION WITH HOVER */
+.card-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row 
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card 
+{
+    flex-basis: 40%;
+    border: 2px solid red;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+.card img 
+{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+.card:hover 
+{
+    border-color: blue;
+}
+.card:hover img 
+{
+    transform: scale(1.1);
+}
+@media (max-width: 666px) 
+{
+    .card 
+    {
+    flex-basis: 100%;
+    }
+    
+    .row 
+    {
+    flex-direction: column; 
+    }
+}
+/* CARDS SECTION WITH HOVER Ends */
+
+/* INTERVIEW QUESTION */
+.edd 
+{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    clear: both;
+    float: left;
+}
+.edd span 
+{
+    display: inline-block;
+    color: coral;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 21px;
+}
+.edd span:before 
+{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 0.5px;
+    background-color: orangered;
+    top: 50%;
+    left: 0px;
+}
+.edd span:after 
+{
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 0.5px;
+    background-color: orangered;
+    top: 50%;
+    margin-left: 12px;
+}
+.edd h2 
+{
+    font-size: 64px;
+    line-height: 1.1;
+}
+.edd 
+{
+    text-align: center;
+    margin: 0px auto;
+    float: none;
+}
+.edd span:before 
+{
+    width: 55px;
+}
+.edd span:after 
+{
+    width: 55px;
+}
+.edd span 
+{
+    padding-left: 66px;
+    margin-left: -66px;
+}
+@media (max-width: 666px) 
+{
+    .edd h2 
+    {
+        font-size: 35px;
+    }
+}
+.wind .plus 
+{
+    background-color: royalblue;
+    border-radius: 3px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -15px;
+  
+}
+.wind .plus:after 
+{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -1px;
+    display: block;
+}
+.wind .plus:before 
+{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -6px;
+    display: block;
+}
+.wind .wind_h p 
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+@media (max-width: 666px) 
+{
+    .wind .wind_h p
+    {
+        font-size: 16px;
+    }
+}
+.wind .wind_h 
+{
+    position: relative;
+    overflow: hidden;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #189AD9, #B91CE3, #DF1616);
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* INTERVIEW QUESTION */
+
+/* Freelance work */
+.watch 
+{
+    text-align: center;
+}
+.watch-content 
+{
+    background-image: url('11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px; 
+}
+.watch p 
+{
+    font-size: 53px;
+    font-weight: bolder;
+    color: #1ECBE1;
+}
+.watch a 
+{
+    text-decoration: none;
+    border: 3px solid #1E1480;
+    padding: 10px;
+    color: black;
+    background: linear-gradient(45deg, #86DC70, #85C6B0, #43D4A4);
+}
+/* Freelance work Ends */
+
+/* News Starting  */
+.ok
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.first,
+.second
+{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+}
+.cs
+{
+    margin: 0 10px;
+    margin-top: -7px;
+}
+.first
+{
+    margin-left: 656px;
+}
+.second
+{
+    margin-right: 670px;
+}
+.bui 
+{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.bui
+{
+    text-shadow: 6px 5px 3px rgb(106, 12, 141, 0.6);
+    background: linear-gradient(90deg, #C349B2, #FF6D22, #FF7655);
+    
+}
+@media (max-width: 666px) 
+{
+    .bui p
+    {
+        font-size: 27px;
+    }
+    
+}
+.car {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ghj 
+{
+    flex-basis: calc(33.33% - 20px);
+    /* 33 for width and 20 for space */
+    margin: 10px;
+    text-decoration: none;
+}
+.ghj .clickable-area 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid; 
+    border-width: 0px 1px; 
+    border-color: black; 
+    border-radius: 40px 40px 45px 40px; 
+}
+.ghj .clickable-area img 
+{
+    width: 70%;
+    transition: transform 0.2s;
+    border-radius: inherit; 
+}
+.qe 
+{
+    text-align: center;
+}
+.qe hr 
+{
+    height: 1px;
+    width: 60%;
+    background-color: #80459A;
+    margin: 10px auto;
+}
+.ghj:hover .clickable-area img
+{
+    transform: scale(1.1);
+}
+/* News Ending  */
+
+/* Form starting */
+.pink 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.dfa 
+{
+    width: 50%;
+    height: 1px;
+    background-color: red;   
+}
+.le 
+{
+    margin-right: 10px;
+}
+.re
+{
+    margin-left: 10px;
+}
+.grow h2
+{
+    font-size: xx-large;    
+}
+.grow p
+{
+    font-size: larger;
+    text-decoration: underline;
+}
+.erds
+{
+    display: flex;
+    flex-wrap: wrap;
+}   
+.grow 
+{
+    flex: 1 50%;
+}
+@media (max-width: 666px) 
+{
+    .grow{
+        margin-left: -10px;
+    }
+    .grow p
+    {
+        font-size: 31px;
+        padding: 1px;
+        margin-left: -37px;
+
+
+    }
+    .grow h2{
+        margin-left: -42px;
+    }
+    
+}
+.dell 
+    {
+    flex: 1 1 50%;
+    }
+form 
+    {
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 50px;
+    
+    animation: ans;
+    animation-duration: 4s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    }
+    @keyframes ans{
+        from{
+           
+            border-bottom: 10px solid black;
+            border-top: 10px solid black;
+            border-left: 10px solid darkblue;
+            border-right: 10px solid darkblue;
+            background-image: url('14.jpeg');
+        }
+        to{
+            
+            border: red;
+            border-bottom: 10px solid red;
+            border-top: 10px solid red;
+            border-left: 10px solid purple;
+            border-right: 10px solid purple;
+            background-image: url('6.jpeg');
+        }
+        
+    }
+    @media (max-width: 666px) 
+    {
+        .dell input
+        {
+            width: 200px;
+        }
+        .dell textarea
+        {
+        width: 200px;
+        }
+        .dell button
+        {
+        margin-top: 2px;
+        }
+        
+    }
+   
+    /* Form Ending */
+
+    /* Footer Starting */
+.eeqa 
+{
+    background: linear-gradient(90deg, #FFC107, #E91E63, #03A9F4);
+    padding: -5px;
+}
+.eeqa footer 
+{
+    margin-top: 10px;
+    font-size: 14px;
+    
+}
+.eeqa footer img 
+{
+   
+    max-width: 80px;
+    margin-bottom: 10px;
+    border-radius: 30%; 
+    box-shadow: 10px 10px 10px  black;
+}
+.eeqa footer p 
+{
+    margin-bottom: 5px;
+}
+.eeqa hr 
+{
+    border: none;
+    height: 1px;
+    margin: 20px 0; 
+}
+
+
+/* Footer Ending */
